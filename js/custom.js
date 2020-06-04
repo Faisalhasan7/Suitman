@@ -64,7 +64,7 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
-        speed: 1000,
+        speed: 1500,
         nextArrow: '.fa-long-arrow-right',
         prevArrow: '.fa-long-arrow-left',
         responsive: [

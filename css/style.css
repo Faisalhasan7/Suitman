@@ -73,7 +73,6 @@ ul {
 .navbar-light .navbar-nav .nav-link:hover:after {
     opacity: 1;
     width: 100%;
-
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -99,6 +98,40 @@ ul {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
     color: #FFD700;
+}
+
+.form-control {
+    border: 1px solid #031F4B;
+    border-radius: 0;
+}
+
+.form-inline.my-2.my-lg-0 button.btn.btn-outline-success.my-2.my-sm-0 i.fa.fa-search {
+    font-size: 22px;
+}
+
+.btn-outline-success {
+    color: #fff;
+}
+
+.btn-outline-success {
+    border-color: #031F4B;
+    border-radius: 0;
+}
+
+.btn-outline-success:hover {
+    color: #031F4B;
+    background-color: gold;
+    border-color: gold;
+}
+
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+    box-shadow: 0 0 0 0 rgba(241, 241, 241, 0.5);
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, .25);
 }
 
 /*Navbar End*/
@@ -223,7 +256,6 @@ ul {
     font-weight: 900;
     font-size: 3rem;
     text-transform: uppercase;
-    z-index: 99999;
     transition: all linear 0.2s;
     color: yellow;
 }
@@ -406,6 +438,39 @@ ul {
 }
 
 /*Vip End*/
+
+/*Reviews Start*/
+#reviews {
+    margin-bottom: 100px;
+}
+
+.review-items {
+    height: 230px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px
+}
+
+.review-items p {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+}
+
+.review-items h3 {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 16px;
+    color: #b2beb5;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.review-items i {
+    color: gold;
+}
+/*Reviews End*/
 
 /*Partner Brands Start*/
 #partners {
@@ -609,7 +674,10 @@ ion-icon {
     color: #fff;
 }
 
-/*Modal Emd*/
+/*Modal End*/
+
+/*================================================================Pages================================================================*/
+
 /*==========================Breadcrumb Start===========*/
 #breadcrumb {
     padding-top: 145px;
@@ -792,8 +860,6 @@ ion-icon {
 /*Get-in-touch End*/
 /*=============Contact-support End===========*/
 
-
-/*================================================================Pages================================================================*/
 /*=============FAQs Start===========*/
 #faq {
     margin-bottom: 100px;
