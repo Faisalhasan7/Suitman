@@ -1,0 +1,979 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+/*Preloader Start*/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+}
+
+.preloader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Preloader End*/
+
+/*Navbar Start*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all linear .5s;
+    background: #031F4B;
+    line-height: 80px;
+}
+
+.navbg {
+    background: #04396C;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(255, 255, 255);
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all linear 0.3s;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    bottom: 30px;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Playfair Display';
+    transition: all linear 0.3s;
+    ;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #FFD700;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #FFD700;
+}
+
+/*Navbar End*/
+
+/*Banner Start*/
+#banner {
+    padding-top: 105px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.banner-item {
+    position: absolute;
+    bottom: 30px;
+    left: 0%;
+}
+
+.banner-item h1 {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-item p {
+    font-family: 'Playfair Display';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+.myButton {
+    text-align: center;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.banner-item a {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 300;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    transition: all linear .3s;
+    text-decoration: none;
+    display: inline-block;
+    color: #035B96;
+}
+
+.banner-item a:hover {
+    background: #035B96;
+    color: #fff;
+}
+
+/*Banner End*/
+
+/*New Arrival Start*/
+#arrival {
+    margin-bottom: 50px;
+}
+
+.arrival-all {
+    position: relative;
+    width: 500px;
+    cursor: pointer;
+}
+
+.arrival-image {
+    height: 350px;
+    overflow: hidden;
+    background: #BFD6F6;
+}
+
+.arrival-image img {
+    transition: all linear 0.3s;
+    filter: grayscale(100%);
+}
+
+.arrival-all:hover > .arrival-image img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.arrival-all:hover > .arrival-image {
+    background: #e7f1ff;
+}
+
+.arrival-all:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background: red;
+    z-index: 99;
+    opacity: 0;
+    transition: all linear 0.5s;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.arrival-all:hover:after {
+    opacity: 1;
+    width: 250px;
+}
+
+.arrival-all h1 {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playfair Dispaly";
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 99999;
+    transition: all linear 0.2s;
+    color: yellow;
+}
+
+.arrival-all:hover h1 {
+    color: #035B96;
+}
+
+/*New Arrival End*/
+
+/*Shop Start*/
+#shop {
+    margin-bottom: 100px;
+}
+
+.heading {
+    padding-bottom: 50px;
+}
+
+.heading h1 {
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-image {
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.products:hover .product-image .hover {
+    opacity: 1;
+}
+
+.products:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    position: relative;
+}
+
+.product-details:after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    transition: all linear 0.3s;
+}
+
+.products:hover .product-details:after {
+    background: #FFD700;
+}
+
+.product-details h3 {
+    padding-top: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.product-details h5 {
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+/*Shop End*/
+
+/*Vip Start*/
+#vip {
+    margin-bottom: 125px;
+    background: #F4F9FC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.vip-images {
+    position: absolute;
+    top: -70px;
+}
+
+.offer-rotate {
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    width: 150px;
+    height: 150px;
+    background: #031F4B;
+    transform: rotate(45deg);
+}
+
+.offer-info {
+    position: absolute;
+    top: 320px;
+    left: 350px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #FFD700;
+}
+
+.offer-info h2 {
+    padding-top: 20px;
+    color: #fff;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.offer-info h3 {
+    color: #FFD700;
+    font-family: "Playfair Display";
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.vip-content h4 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .20rem;
+    text-transform: uppercase;
+}
+
+.vip-content h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.vip-content h3 {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.vip-content p {
+    padding-top: 20px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.vip-content a {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #035B96;
+    transition: all linear .3s;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.vip-content a:hover {
+    background: #FFD700;
+    color: #035B96;
+}
+
+/*Vip End*/
+
+/*Partner Brands Start*/
+#partners {
+    margin-bottom: 100px;
+}
+
+.brand {
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    width: 170px;
+    overflow: hidden;
+}
+
+.brand img {
+    transition: all linear .3s;
+}
+
+.brand img:hover {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.5);
+}
+
+/*Partner Brands End*/
+
+
+/*Subscribe Start*/
+#subscribe {
+    background: #031F4B;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 100px;
+}
+
+.email h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 1px
+}
+
+.email p {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px
+}
+
+/*Subscribe End*/
+
+/*Footer Start*/
+#footer {
+    margin-bottom: 200px;
+}
+
+.socials a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #031F4B;
+    line-height: 60px;
+    border: 2px solid #031F4B;
+    transition: all linear 0.2s;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    background: #031F4B;
+    color: #FFD700;
+}
+
+.quick-menu {
+    margin-top: 25px;
+}
+
+.quick-menu a {
+    font-family: "Playfair Display";
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #031F4B;
+    text-decoration: none;
+
+}
+
+.quick-menu a:hover {
+    color: #04396C;
+}
+
+.payment {
+    padding-top: 20px;
+}
+
+.payment ul li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.copyright span {
+    font-family: "Playfair Display";
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/*Footer End*/
+
+/*Back to top Start*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.back-to-top i {
+    width: 40px;
+    height: 40px;
+    background: #FFD700;
+    font-size: 20px;
+    color: #031F4B;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.back-to-top i:hover {
+    color: #FFD700;
+    background: #031F4B;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+/*Back to top End*/
+
+/*Modal Start*/
+.modal-content {
+    border-radius: 0;
+    border: none;
+    padding-right: 40px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: -8%;
+    top: -1%;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.pop-up-item {
+    padding-top: 25px;
+}
+
+.pop-up-item h3 {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.pop-up-item p {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.form-group button {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1px solid #035B96;
+    background: #fff;
+    text-decoration: none;
+    color: #035B96;
+    transition: all linear .3s;
+}
+
+.form-group button:hover {
+    background: #035B96;
+    color: #fff;
+}
+
+/*Modal Emd*/
+/*==========================Breadcrumb Start===========*/
+#breadcrumb {
+    padding-top: 145px;
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+    background: #FFD700;
+}
+
+.breadcrumb {
+    background: #FFD700;
+}
+
+.page h1 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.breadcrumb-item li {
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.breadcrumb-item li a {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #031F4B;
+    text-decoration: none;
+}
+
+.breadcrumb-item li a:hover {
+    color: #04396C;
+}
+
+.breadcrumb-item li {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    color: #fff;
+}
+
+/*===================Breadcrumb End============*/
+
+/*=============Contact-support Start===========*/
+#contact-support {
+    margin-bottom: 100px;
+}
+
+.information p {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*Contact-support End*/
+
+/*Get-in-touch Start*/
+#get_in_touch {
+    margin-bottom: 100px;
+}
+
+.contact_icon i {
+    font-size: 34px;
+    color: #031F4B;
+}
+
+.contact_text span {
+    font-family: "Playfair Display";
+    color: #031F4B;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.contact_text a {
+    color: #687188;
+    text-decoration: none;
+}
+
+.contact_text a:hover {
+    color: #52AEEC;
+}
+
+.contact_style3 {
+    height: 230px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+}
+
+.contact_style3 .contact_icon {
+    border: 1px solid #031F4B;
+    margin: 0 0 5px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+}
+
+.contact_style3 .contact_icon i {
+    line-height: 78px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_style3 .contact_icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #031F4B;
+    z-index: ;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.contact_style3:hover .contact_icon::before {
+    transform: scale(1);
+}
+
+.contact_style3:hover .contact_icon i {
+    color: #FFD700;
+}
+
+.contact_box {
+    position: relative;
+    padding: 50px 0px;
+    display: table;
+    width: 100%;
+}
+
+.contact_form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    z-index: 9;
+}
+
+.contact_box .map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.contact_box .map iframe {
+    height: 100%;
+}
+
+.heading_s1 h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.heading_s1 p {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+
+/*Get-in-touch End*/
+/*=============Contact-support End===========*/
+
+
+/*================================================================Pages================================================================*/
+/*=============FAQs Start===========*/
+#faq {
+    margin-bottom: 100px;
+}
+
+.faq-topic {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.faq-topic h3 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.faq-topic h4 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.faq-topic p {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.faq-topic p a {
+    text-decoration: none;
+    color: #031F4B;
+    font-weight: 600;
+}
+
+.faq-topic a:hover {
+    color: #0060bc;
+}
+
+/*=============FAQs End=======+====*/
+
+/*=============Privacy Policy Start===========*/
+#privacy {
+    margin-bottom: 100px;
+}
+
+.privacy-policy {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.privacy-policy h3 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.privacy-policy h4 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.privacy-policy p {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.privacy-policy p a {
+    text-decoration: none;
+    color: #031F4B;
+    font-weight: 600;
+}
+
+.privacy-policy a:hover {
+    color: #0060bc;
+}
+
+/*=============Privacy Policy End=======+====*/
+
+/*=============Terms & Conditions Start===========*/
+#term {
+    margin-bottom: 100px;
+}
+
+.term_condi {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.term_condi h3 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.term_condi h4 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.term_condi p {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.term_condi p a {
+    text-decoration: none;
+    color: #031F4B;
+    font-weight: 600;
+}
+
+.term_condi a:hover {
+    color: #0060bc;
+}
+
+/*=============Terms & Conditions End=======+====*/
+
+/*=============Shipping Start===========*/
+#shipping {
+    margin-bottom: 100px;
+}
+
+.ship-topic {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.ship-topic h3 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.ship-topic h4 {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.ship-topic p {
+    font-family: "Noto Sans JP";
+    color: #031F4B;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.ship-topic p a {
+    text-decoration: none;
+    color: #031F4B;
+    font-weight: 600;
+}
+
+.ship-topic a:hover {
+    color: #0060bc;
+}
+
+/*=============Shipping End=======+====*/
