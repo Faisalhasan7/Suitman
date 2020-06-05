@@ -846,17 +846,8 @@ ion-icon {
     z-index: 9;
 }
 
-.contact_box .map {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.contact_box .map iframe {
-    height: 100%;
+.map {
+    height: 410px;
 }
 
 .heading_s1 h2 {
